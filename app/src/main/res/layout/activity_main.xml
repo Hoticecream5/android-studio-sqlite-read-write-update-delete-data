@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtTxtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="141dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="User ID" />
+
+    <EditText
+        android:id="@+id/edtTxtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtID"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="126dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/edtTxtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtUserName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="127dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="33dp"
+        android:layout_toStartOf="@+id/btnFetch"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/btnFetch"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="25dp"
+        android:text="Fetch" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="340dp"
+        android:layout_toStartOf="@+id/btnDelete"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFetch"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="340dp"
+        android:text="Delete" />
+
+</RelativeLayout>
